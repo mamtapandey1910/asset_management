@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,63 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 15%;
+  height: 100vh;
+  background-color: #47767a;
+  position: absolute;
+}
+
+/* 
+.profile {
+  font-family: 'Gentium Plus', serif;
+  height: 400px;
+  width: 400px;
+  position: relative;
+  border: 5px solid;
+/* } */
+
+.wrapper {
+  width: 95%;
+  height: 10vh;
+  display: flex;
+  margin: 5% auto;
+}
+
+.profilePhoto {
+  background: url(./images//userprofile.jpg);
+  position: relative;
+  background-size: 150% 150%;
+  /* padding: -15px -15px; */
+  height: 100%;
+  width: 40%;
+  border-radius: 50%;
+  background-position: center;
+  cursor: pointer;
+
+  /* font-family: 'Kaushan Script', cursive; */
+
+  /* height: 300px;
+
+  border-color: pink; */
+}
+
+.profileName {
+  font-family: 'IBM Plex Sans', sans-serif;
+  margin: auto 10%;
+  color: white;
+  font-weight: bold;
+}
+
+.my_file {
+  margin: 46px 0;
+  display: none;
 }
