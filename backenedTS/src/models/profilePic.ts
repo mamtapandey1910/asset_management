@@ -5,7 +5,7 @@ const profilePhotoSchema = new Schema({
         type: String,
         required: true
     },
-    file: {
+    img: {
         data: Buffer,
         contentType: String
     },
