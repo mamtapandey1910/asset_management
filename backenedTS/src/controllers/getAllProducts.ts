@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { catchAsynchErrors, catchAsynchErrorType } from "../middleware/catchAsyncError";
+import { catchAsynchErrors, catchAsynchErrorParameterType } from "../middleware/catchAsyncError";
 
 type getAllProductsType = (req: Request, res: Response, nex: NextFunction) => Promise<void> | void
 

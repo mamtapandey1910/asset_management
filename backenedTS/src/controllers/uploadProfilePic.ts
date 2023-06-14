@@ -5,6 +5,7 @@ import { profilePic } from "../models/profilePic"
 
 export const uploadProfilePicture = (req: Request, res: Response, next: NextFunction) => {
     // const { filename } = req.file
+    console.log(req.file)
     const currentDirectory = __dirname
     const fileDirectory = currentDirectory.slice(0, currentDirectory.lastIndexOf('/'))
     // if (!req.file) {
