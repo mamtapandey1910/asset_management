@@ -1,4 +1,3 @@
-import { Request, Response, NextFunction } from 'express'
 
 export interface productTypeRequest {
     productName: String;
@@ -35,9 +34,7 @@ export interface AddedProduct {
     createdAt: Date,
 }
 
-export type APIType = <T>(req: Request, res: Response, next: NextFunction) => Promise<void> | void
-
-
+// export type APIType = <T>(req: Request, res: Response, next: NextFunction) => Promise<void>
 
 // interface customErrorType extends Error {
 //     message: string

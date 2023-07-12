@@ -6,6 +6,7 @@ const Router = express.Router()
 import bodyParser from 'body-parser';
 // import { profilePic } from './models/profilePic';
 import { nameModel } from './models/name';
+import { errors } from './middleware/errors';
 
 connectToMongoDB()
 
@@ -22,4 +23,6 @@ app.use(express.json())
 
 app.use('/', require('./routers/getAllProductsRouter'))
 app.use('/profile', require('./routers/uploadProfilePicRouter'))
-app.use('/products', require('./products/getproductsRouter'))
+app.use('/', require('./products/getproductsRouter'))
+
+app.use(errors)
